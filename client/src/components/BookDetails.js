@@ -40,7 +40,7 @@ class BookDetails extends React.Component {
 export default graphql(getBookQuery, {
     options: (props) => {
         return {
-            variable: {
+            variables: {
                 id: props.bookId
             }
         }
